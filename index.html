@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Open 2026 | RAAH Education</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16852288447"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-16852288447');
+
+        function call_conversion() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-16852288447/EzpKCJKmkZkaEL-H5uM-',
+                'value': 1.0,
+                'currency': 'INR'
+            });
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root {
+            --brand-blue: #0a235b;
+            /* RAAH Education Brand Blue */
+            --brand-red: #e31e24;
+            /* RAAH Education Brand Red */
+            --light-bg: #f4f7fa;
+            --text-dark: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background: var(--light-bg);
+            overflow-x: hidden;
+        }
+
+        /* Header / Nav */
+        nav {
+            background: #fff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--brand-blue);
+        }
+
+        .logo-text span {
+            color: var(--brand-red);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(10, 35, 91, 0.9), rgba(10, 35, 91, 0.7)),
+                url('https://images.unsplash.com/photo-1541339907198-e08756eaa589?auto=format&fit=crop&w=1350&q=80') center/cover;
+            padding: 60px 5%;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero-content {
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* Form Design */
+        .form-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-card h3 {
+            color: var(--brand-blue);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .form-card input,
+        .form-card select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-card input:focus,
+        .form-card select:focus {
+            border-color: var(--brand-blue);
+        }
+
+        .btn-main {
+            width: 100%;
+            background: var(--brand-red);
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .btn-main:hover {
+            background: #c1171d;
+            transform: scale(1.02);
+        }
+
+        /* Sections Styling */
+        section {
+            padding: 70px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: var(--brand-blue);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: var(--brand-red);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Course Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .course-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #eee;
+            transition: 0.3s;
+        }
+
+        .course-card i {
+            font-size: 40px;
+            color: var(--brand-red);
+            margin-bottom: 15px;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        /* University Grid */
+        .uni-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .uni-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #f0f0f0;
+        }
+
+        .uni-card img {
+            max-width: 100%;
+            height: 60px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+
+        .uni-card:hover img {
+            filter: grayscale(0%);
+        }
+
+        /* Floating Buttons */
+        .float-btn {
+            position: fixed;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .call {
+            bottom: 90px;
+            background: #007bff;
+        }
+
+        .wa {
+            bottom: 25px;
+            background: #25d366;
+        }
+
+        @media (max-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+                text-align: center;
+            }
+
+            .hero-content p {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-text">RAAH <span>EDUCATION</span></div>
+        <div style="font-weight: 600; font-size: 14px;"><i class="fa fa-phone"></i> +91-92898 54066</div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Expert Guidance for <br>Direct Admissions 2026</h1>
+                <p>Don't let your dreams wait. Get free counseling and secure your seat in India's top-rated UGC & AICTE
+                    approved universities.</p>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div><i class="fa fa-check-circle" style="color:var(--brand-red)"></i> 100% Secure</div>
+                    <div><i class="fa fa-check-circle" style="color:var(--brand-red)"></i> Expert Mentors</div>
+                    <div><i class="fa fa-check-circle" style="color:var(--brand-red)"></i> Scholarship Help</div>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h3>Register for 2026</h3>
+                <form action="https://formspree.io/f/mnjbzpoe" method="POST">
+
+                    <input type="hidden" name="_next" value="https://admission.raaheducation.com/thankyou.html">
+
+                    <input type="text" name="name" placeholder="Full Name" required>
+
+                    <input type="tel" name="phone" placeholder="WhatsApp Number" required>
+
+                    <input type="email" name="email" placeholder="Email Address" required>
+
+                    <select name="course" required>
+                        <option value="" disabled selected>Select Target Course</option>
+                        <option value="Polytechnic">Polytechnic</option>
+                        <option value="B.Tech">Engineering (B.Tech/Diploma)</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA/BCom">BBA / BCom</option>
+                        <option value="M.Tech">M.Tech</option>
+                        <option value="MBA/PGDM">Management (MBA/PGDM)</option>
+                        <option value="MCA">MCA</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Biotechnology">Biotechnology</option>
+                        <option value="Allied Health Sciences">Allied Health Sciences</option>
+                        <option value="Forensic Science">Forensic Science</option>
+                        <option value="Paramedical">Paramedical</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Nursing">Nursing (B.Sc/GNM)</option>
+                        <option value="Hotel Management">Hotel Management</option>
+                        <option value="Law">Law (LLB/BA-LLB)</option>
+                        <option value="Medical">Medical</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+
+                    <input type="text" name="branch" placeholder="Preferred Branch (e.g., CS, Mechanical, HR)" required>
+
+                    <button type="submit" class="btn-main">GET FREE COUNSELLING</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">
+            <h2>Popular Programs</h2>
+        </div>
+        <div class="grid">
+            <div class="course-card"><i class="fa fa-cog"></i>
+                <h3>Engineering</h3>
+                <p>B.Tech, M.Tech & Diploma</p>
+            </div>
+            <div class="course-card"><i class="fa fa-briefcase"></i>
+                <h3>Management</h3>
+                <p>MBA, PGDM & BBA</p>
+            </div>
+            <div class="course-card"><i class="fa fa-user-md"></i>
+                <h3>Nursing</h3>
+                <p>B.Sc Nursing & GNM</p>
+            </div>
+            <div class="course-card"><i class="fa fa-heartbeat"></i>
+                <h3>Paramedical</h3>
+                <p>DMLT, BPT & Allied Health</p>
+            </div>
+            <div class="course-card"><i class="fa fa-balance-scale"></i>
+                <h3>Law</h3>
+                <p>LLB, BA-LLB & LLM</p>
+            </div>
+            <div class="course-card"><i class="fa fa-leaf"></i>
+                <h3>Agriculture</h3>
+                <p>B.Sc & M.Sc Agriculture</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #fff;">
+        <div class="section-title">
+            <h2>Our Partner Universities</h2>
+        </div>
+        <div class="uni-grid">
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Sanskriti+Uni"
+                    alt="Sanskriti University">
+                <h4>Sanskriti University</h4>
+            </div>
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=NIU" alt="NIU">
+                <h4>Noida International</h4>
+            </div>
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Marwadi+Uni"
+                    alt="Marwadi University">
+                <h4>Marwadi University</h4>
+            </div>
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Graphic+Era" alt="Graphic Era">
+                <h4>Graphic Era</h4>
+            </div>
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Mangalmay" alt="Mangalmay">
+                <h4>Mangalmay Group</h4>
+            </div>
+            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=100+More" alt="More">
+                <h4>& 100+ More</h4>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: var(--brand-blue); color: #fff; text-align: center;">
+        <div class="grid" style="max-width: 1000px; margin: auto;">
+            <div>
+                <h2 style="font-size: 40px;">10+</h2>
+                <p>Years Experience</p>
+            </div>
+            <div>
+                <h2 style="font-size: 40px;">5000+</h2>
+                <p>Students Placed</p>
+            </div>
+            <div>
+                <h2 style="font-size: 40px;">100+</h2>
+                <p>College Network</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 30px; text-align: center; background: #222; color: #bbb; font-size: 14px;">
+        <p>©️ 2026 RAAH Education | Trusted Admission Partner</p>
+    </footer>
+
+    <a href="tel:+919289854066" onclick="call_conversion()" class="float-btn call"><i class="fa fa-phone"></i></a>
+    <a href="https://wa.me/919289854066" class="float-btn wa"><i class="fab fa-whatsapp"></i></a>
+
+</body>
+
+</html>
