@@ -52,7 +52,7 @@
         /* Header / Nav */
         nav {
             background: #fff;
-            padding: 15px 5%;
+            padding: 10px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -232,12 +232,11 @@
             max-width: 100%;
             height: 60px;
             object-fit: contain;
-            filter: grayscale(100%);
             transition: 0.3s;
         }
 
         .uni-card:hover img {
-            filter: grayscale(0%);
+            transform: scale(1.05);
         }
 
         /* Floating Buttons */
@@ -287,7 +286,9 @@
 <body>
 
     <nav>
-        <div class="logo-text">RAAH <span>EDUCATION</span></div>
+        <a href="#" style="display: flex; height: 55px; width: 240px; align-items: center; overflow: hidden; text-decoration: none;">
+            <img src="Logo.jpeg" alt="RAAH Education Logo" style="height: 220px; max-width: none; margin-left: -30px; margin-top: 8px; mix-blend-mode: multiply;">
+        </a>
         <div style="font-weight: 600; font-size: 14px;"><i class="fa fa-phone"></i> +91-92898 54066</div>
     </nav>
 
@@ -383,21 +384,21 @@
             <h2>Our Partner Universities</h2>
         </div>
         <div class="uni-grid">
-            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Sanskriti+Uni"
+            <div class="uni-card"><img src="SanskritiUniversity.jpeg"
                     alt="Sanskriti University">
                 <h4>Sanskriti University</h4>
             </div>
-            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=NIU" alt="NIU">
+            <div class="uni-card"><img src="NoidaInternational.jpeg" alt="NIU">
                 <h4>Noida International</h4>
             </div>
-            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Marwadi+Uni"
+            <div class="uni-card"><img src="MarwadiUniversity.jpeg"
                     alt="Marwadi University">
                 <h4>Marwadi University</h4>
             </div>
-            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Graphic+Era" alt="Graphic Era">
+            <div class="uni-card"><img src="GraphicEra.jpeg" alt="Graphic Era">
                 <h4>Graphic Era</h4>
             </div>
-            <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=Mangalmay" alt="Mangalmay">
+            <div class="uni-card"><img src="MangalMay.jpeg" alt="Mangalmay">
                 <h4>Mangalmay Group</h4>
             </div>
             <div class="uni-card"><img src="https://via.placeholder.com/150x60?text=100+More" alt="More">
